@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Задание: викторина «Ругательства» (вариант 2).">
+    <title>Квиз «Ругательства» — Checkpoint</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container site-header__inner">
+            <a class="logo" href="../index.html" aria-label="Checkpoint — на главную">
+                <span class="logo__flag" aria-hidden="true">
+                    <span class="logo__hill logo__hill--back"></span>
+                    <span class="logo__hill"></span>
+                </span>
+                <span class="logo__text">Checkpoint</span>
+            </a>
+            <nav class="nav" aria-label="Основное меню">
+                <input class="nav__toggle" type="checkbox" id="nav-toggle" aria-label="Меню" aria-controls="nav-list">
+                <label class="nav__burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+                <ul class="nav__list" id="nav-list">
+                    <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../catalog.html">Каталог</a></li>
+                    <li class="nav__item nav__item--drop">
+                        <a class="nav__link" href="../reviews.html">Рецензии</a>
+                        <ul class="nav__sub">
+                            <li><a class="nav__link" href="../review-tlou.html">The Last of Us</a></li>
+                            <li><a class="nav__link" href="../review-trials.html">The Outlast Trials</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a class="nav__link is-active" href="../tasks/index.html">Задания</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../coursework.html">Курсовая</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-head page-head--compact">
+            <div class="container">
+                <h1>Квиз «Ругательства»</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <section class="section demo-stage">
+                <div class="demo demo--wide demo--quiz">
+                    <iframe class="demo__frame demo__frame--quiz" src="../works/quiz/index.html" title="Квиз «Ругательства»" loading="lazy"></iframe>
+                    <p class="demo__caption"><a href="../works/quiz/index.html">Открыть квиз отдельно</a></p>
+                </div>
+            </section>
+            <nav class="pager" aria-label="Переходы между заданиями">
+                <a class="btn btn--ghost" href="roller.html">← Flexbox-ролик</a>
+                <a class="btn" href="index.html">Все задания →</a>
+            </nav>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© 2026 Checkpoint — дневник игр</p>
+            <ul class="site-footer__nav">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../catalog.html">Каталог</a></li>
+                <li><a href="../reviews.html">Рецензии</a></li>
+                <li><a href="../tasks/index.html">Задания</a></li>
+                <li><a href="../coursework.html">Курсовая</a></li>
+                <li><a href="https://github.com/tuliplya">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+    <a class="to-top" href="#top" aria-label="Наверх"></a>
+</body>
+</html>

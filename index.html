@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Checkpoint — личный дневник игр: каталог по франшизам, оценки и рецензии.">
+    <title>Checkpoint — дневник игр</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html" aria-label="Checkpoint — на главную">
+                <span class="logo__flag" aria-hidden="true">
+                    <span class="logo__hill logo__hill--back"></span>
+                    <span class="logo__hill"></span>
+                </span>
+                <span class="logo__text">Checkpoint</span>
+            </a>
+            <nav class="nav" aria-label="Основное меню">
+                <input class="nav__toggle" type="checkbox" id="nav-toggle" aria-label="Меню" aria-controls="nav-list">
+                <label class="nav__burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+                <ul class="nav__list" id="nav-list">
+                    <li class="nav__item"><a class="nav__link is-active" href="index.html" aria-current="page">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
+                    <li class="nav__item nav__item--drop">
+                        <a class="nav__link" href="reviews.html">Рецензии</a>
+                        <ul class="nav__sub">
+                            <li><a class="nav__link" href="review-tlou.html">The Last of Us</a></li>
+                            <li><a class="nav__link" href="review-trials.html">The Outlast Trials</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="tasks/index.html">Задания</a></li>
+                    <li class="nav__item"><a class="nav__link" href="coursework.html">Курсовая</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img class="hero__img" src="img/hero.jpg" alt="" width="1920" height="1089">
+            <div class="container hero__content">
+                <h1>Дневник игр</h1>
+                <p>Истории, которые остались со мной: хоррор, интерактивное кино, постапокалипсис и не только.</p>
+                <a class="btn" href="catalog.html">В каталог</a>
+            </div>
+        </section>
+
+        <section class="section container" id="favorites">
+            <h2 class="section__title">Любимые</h2>
+            <div class="features">
+                <article class="feature">
+                    <img class="feature__cover" src="img/covers/tlou-part2.jpg" alt="Обложка The Last of Us Part II" width="300" height="420">
+                    <div class="feature__body">
+                        <h3>The Last of Us</h3>
+                        <p><span class="badge badge--fav">любимая франшиза</span></p>
+                        <p>Серия Naughty Dog о выживании и привязанности. Самая любимая часть — Part II. <span class="feature__score">10/10</span></p>
+                        <a class="btn btn--small" href="review-tlou.html">Читать рецензию</a>
+                    </div>
+                </article>
+                <article class="feature">
+                    <img class="feature__cover" src="img/covers/trials.jpg" alt="Обложка The Outlast Trials" width="300" height="420">
+                    <div class="feature__body">
+                        <h3>The Outlast Trials</h3>
+                        <p><span class="badge badge--fav">любимая кооп-игра</span></p>
+                        <p>Кооперативный хоррор от Red Barrels, в который лучше играть с друзьями. <span class="feature__score">10/10</span></p>
+                        <a class="btn btn--small" href="review-trials.html">Читать рецензию</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container" id="in-progress">
+            <h2 class="section__title">Сейчас прохожу</h2>
+            <div class="cards cards--mini">
+                <article class="game-card">
+                    <img class="game-card__cover" src="img/covers/rdr2.jpg" alt="Обложка игры Red Dead Redemption 2" width="300" height="420" loading="lazy">
+                    <div class="game-card__body">
+                        <h3 class="game-card__title"><a class="game-card__link" href="catalog.html#game-rdr2">Red Dead Redemption 2</a></h3>
+                        <p class="game-card__status"><span class="badge badge--progress">В процессе</span></p>
+                    </div>
+                </article>
+                <article class="game-card">
+                    <img class="game-card__cover" src="img/covers/cult-of-lamb.jpg" alt="Обложка игры Cult of the Lamb" width="300" height="420" loading="lazy">
+                    <div class="game-card__body">
+                        <h3 class="game-card__title"><a class="game-card__link" href="catalog.html#game-cult-of-lamb">Cult of the Lamb</a></h3>
+                        <p class="game-card__status"><span class="badge badge--progress">В процессе</span></p>
+                    </div>
+                </article>
+                <article class="game-card">
+                    <img class="game-card__cover" src="img/covers/cyberpunk.jpg" alt="Обложка игры Cyberpunk 2077" width="300" height="420" loading="lazy">
+                    <div class="game-card__body">
+                        <h3 class="game-card__title"><a class="game-card__link" href="catalog.html#game-cyberpunk">Cyberpunk 2077</a></h3>
+                        <p class="game-card__status"><span class="badge badge--progress">В процессе</span></p>
+                    </div>
+                </article>
+                <article class="game-card">
+                    <img class="game-card__cover" src="img/covers/dishonored.jpg" alt="Обложка игры Dishonored" width="300" height="420" loading="lazy">
+                    <div class="game-card__body">
+                        <h3 class="game-card__title"><a class="game-card__link" href="catalog.html#game-dishonored">Dishonored</a></h3>
+                        <p class="game-card__status"><span class="badge badge--progress">В процессе</span></p>
+                    </div>
+                </article>
+                <article class="game-card">
+                    <img class="game-card__cover" src="img/covers/bg3.jpg" alt="Обложка игры Baldur's Gate 3" width="300" height="420" loading="lazy">
+                    <div class="game-card__body">
+                        <h3 class="game-card__title"><a class="game-card__link" href="catalog.html#game-bg3">Baldur's Gate 3</a></h3>
+                        <p class="game-card__status"><span class="badge badge--progress">В процессе</span></p>
+                    </div>
+                </article>
+                <article class="game-card">
+                    <img class="game-card__cover" src="img/covers/stardew.jpg" alt="Обложка игры Stardew Valley" width="300" height="420" loading="lazy">
+                    <div class="game-card__body">
+                        <h3 class="game-card__title"><a class="game-card__link" href="catalog.html#game-stardew">Stardew Valley</a></h3>
+                        <p class="game-card__status"><span class="badge badge--progress">В процессе</span></p>
+                    </div>
+                </article>
+                <article class="game-card">
+                    <img class="game-card__cover" src="img/covers/kcd1.jpg" alt="Обложка игры Kingdom Come: Deliverance" width="300" height="420" loading="lazy">
+                    <div class="game-card__body">
+                        <h3 class="game-card__title"><a class="game-card__link" href="catalog.html#game-kcd1">Kingdom Come: Deliverance</a></h3>
+                        <p class="game-card__status"><span class="badge badge--progress">В процессе</span></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container" id="about">
+            <h2 class="section__title">О дневнике</h2>
+            <div class="about">
+                <img class="about__img" src="img/about.jpg" alt="Иллюстрация к дневнику игр" width="720" height="480" loading="lazy">
+                <div class="about__text">
+                    <p>Checkpoint — это личный дневник игр. Название взято из игрового языка: чекпоинт — точка, в которой игра сохраняет прогресс. Каждая пройденная история для меня такая точка: к ней хочется вернуться, вспомнить героев и записать, что она оставила после себя.</p>
+                    <p>В каталоге игры собраны по франшизам. У каждой игры есть студия, год выхода, жанр, оценка и короткое впечатление. Две игры, The Last of Us и The Outlast Trials, получили подробные рецензии с картинками. Остальное — то, что я прохожу прямо сейчас, и то, до чего ещё доберусь.</p>
+                    <p>Оценка франшизы считается как среднее арифметическое оценок пройденных игр внутри неё. Игры, которые ещё в процессе или только в планах, в расчёт не входят.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="stats">
+            <h2 class="section__title">В цифрах</h2>
+            <dl class="stats">
+                <div class="stats__item"><dt>пройдено</dt><dd>14</dd></div>
+                <div class="stats__item"><dt>в процессе</dt><dd>7</dd></div>
+                <div class="stats__item"><dt>в планах</dt><dd>16</dd></div>
+                <div class="stats__item"><dt>франшиз</dt><dd>8</dd></div>
+            </dl>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© 2026 Checkpoint — дневник игр</p>
+            <ul class="site-footer__nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="reviews.html">Рецензии</a></li>
+                <li><a href="tasks/index.html">Задания</a></li>
+                <li><a href="coursework.html">Курсовая</a></li>
+                <li><a href="https://github.com/tuliplya">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+    <a class="to-top" href="#top" aria-label="Наверх"></a>
+</body>
+</html>

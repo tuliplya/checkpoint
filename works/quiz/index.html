@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз «Ругательства»</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <main class="page">
+        <header class="page__head">
+            <h1>Квиз «Ругательства»</h1>
+            <p>Выбери вопрос и ответь на него. Пока вопрос не закрыт, следующий выбрать нельзя.</p>
+        </header>
+
+        <p class="finish" id="finish-msg" hidden></p>
+        <p class="stats" id="stats" hidden></p>
+
+        <div class="quiz">
+            <h2 class="quiz__label">Вопрос</h2>
+
+            <section class="quiz-area" id="quiz-area" aria-label="Вопросы"></section>
+
+            <section class="answers" id="answers-area" aria-live="polite" aria-label="Ответы"></section>
+        </div>
+    </main>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

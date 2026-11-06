@@ -1,0 +1,254 @@
+/* Общий контейнер */
+.picture-container {
+    width: 12.5rem;
+    height: 12.5rem;
+    position: relative;
+    margin: 1.25rem auto;
+}
+
+/* Внешняя рамка */
+.outside-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+/* Внутренняя рамка */
+.inside-border {
+    position: absolute;
+    top: 0.375rem;
+    left:0.375rem;
+    width: 11.75rem;
+    height: 11.75rem;
+    background: linear-gradient(to top right, #cf00be, #FFFFFF);
+    z-index: 2;
+}
+
+/* Небо */
+.sky {
+    position: absolute;
+    top: 0.9375rem;
+    left: 0.9375rem;
+    width: 10.625rem;
+    height: 10.625rem;
+    background: radial-gradient(circle at center, #E0F7FF 0%, #87a2eb 40%, #045dc4 100%);
+    overflow: hidden;
+    z-index: 3;
+}
+
+/* Облако */
+.cloud {
+    position: absolute;
+    top: -0.3125rem;
+    left: 1.875rem;
+    width: 6.875rem;
+    height: 2.5rem;
+    background: radial-gradient(circle at center, #E0F7FF 0%, #87a2eb 60%, #1667c4 150%);
+    z-index: 4;
+    -webkit-mask: 
+        radial-gradient(ellipse 2.1875rem 0.9375rem at 2.1875rem 0.9375rem, black 99%, transparent 100%),
+        radial-gradient(ellipse 2.1875rem 0.9375rem at 4.6875rem 1.5625rem, black 99%, transparent 100%);
+    mask: 
+        radial-gradient(ellipse 2.1875rem 0.9375rem at 2.1875rem 0.9375rem, black 99%, transparent 100%),
+        radial-gradient(ellipse 2.1875rem 0.9375rem at 4.6875rem 1.5625rem, black 99%, transparent 100%);
+}
+
+/* Левый гриб (большой) */
+.mushroom-left {
+    position: absolute;
+    bottom: 0.625rem;
+    left: 0.9375rem;
+    width: 1.875rem;
+    height: 4.375rem;
+    background: #F5DEB3;
+    border: 0.125rem solid #692929;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+/* Шляпка левого гриба */
+.mushroom-left::before {
+    content: '';
+    position: absolute;
+    top: -0.9375rem; 
+    left: -1.5625rem;
+    width: 5rem;
+    height: 2.5rem;
+    background: radial-gradient(circle at 60% 35%, #ddc2c2 -7%, #693636 60%, #692929 80%);
+    border-radius: 50% / 100% 100% 0 0;
+}
+
+/* Правый гриб (маленький) */
+.mushroom-right {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 3.4375rem;
+    width: 1.25rem;
+    height: 2.8125rem;
+    background: #F5DEB3;
+    border: 0.125rem solid #692929;
+    border-radius: 50%;
+    z-index: 5;
+    transform: rotate(30deg);
+}
+
+/* Шляпка правого гриба */
+.mushroom-right::before {
+    content: '';
+    position: absolute;
+    top: -0.625rem;
+    left: -0.9375rem;
+    width: 3.125rem;
+    height: 1.5625rem;
+    background: radial-gradient(circle at 60% 35%, #ddc2c2 -7%, #693636 60%, #692929 80%);
+    border-radius: 50% / 100% 100% 0 0;
+}
+
+/* Пчела */
+.bee {
+    position: absolute;
+    top: 3.875rem;
+    left: 5.9375rem;
+    width: 1.5625rem;
+    height: 0.9375rem;
+    transform: rotate(-35deg);
+    z-index: 6;
+}
+
+/* Тело пчелы*/
+.bee::before {
+    content: '';
+    position: absolute;
+    top: -0.0625rem;
+    left: 0.125rem;
+    width: 2.5rem;
+    height: 0.9375rem;
+    background: #fcd425;
+    border: 0.0938rem solid #cfb51e;
+    border-radius: 50%;
+}
+/* Голова пчелы */
+.bee::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.625rem;
+    width: 0.875rem;
+    height: 0.875rem;
+    background: #fcd425;
+    border: 0.0938rem solid #cfb51e;
+    border-radius: 50%;
+}
+
+/* Крылья */
+.wing {
+    position: absolute;
+    width: 1.875rem;
+    height: 0.75rem;
+    background: #7a99f5;
+    border: 0.0938rem solid #193eaf;
+    border-radius: 50%;
+    z-index: 7;
+
+}
+
+/* Левое нижнее крыло */
+.wing-left-bottom {
+    top: 2.125rem;
+    left: 5.9375rem;
+    transform: rotate(-100deg);
+}
+
+/* Левое верхнее крыло */
+.wing-left-top {
+    top: 2.75rem;
+    left: 5.125rem;
+    transform: rotate(30deg);
+}
+
+/* Правое нижнее крыло */
+.wing-right-bottom {
+    top: 4.3125rem;
+    right: 1.0625rem;
+    transform: rotate(30deg);
+}
+
+/* Правое верхнее крыло*/
+.wing-right-top {
+    top: 4.875rem;
+    right: 1.875rem;
+    transform: rotate(-100deg);
+}
+
+/* Глаза*/
+.eye {
+    position: absolute;
+    width: 0.3125rem;
+    height: 0.3125rem;
+    background: #000000;
+    border-radius: 50%;
+    z-index: 8;
+}
+
+/* Правый глаз*/
+.eye-right{
+    top: 4.6875rem;
+    left: 5.625rem;
+}
+
+/* Левый глаз*/
+.eye-left{
+    top: 5rem;
+    left: 5.9375rem;
+}
+
+/* Трава */
+.grass {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3.125rem;
+    z-index: 5;
+}
+
+/* Треугольник травы */
+.grass-blade {
+    position: absolute;
+    bottom: 0;
+    left: -0.625rem;
+    width: 4.375rem;
+    height: 2.1875rem;
+    background: repeating-linear-gradient(
+        -45deg,
+        #41ee41 0,
+        #41ee41 0.25rem,
+        #228B22 0.25rem,
+        #228B22 0.5rem
+    );
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Треугольник 1 */
+.grass-blade:nth-child(1) {
+    left: -0.9375rem;
+}
+
+/* Треугольник 2 */
+.grass-blade:nth-child(2) {
+    left: 1.6875rem;
+}
+
+/* Треугольник 3 */
+.grass-blade:nth-child(3) {
+    left: 4.4375rem;
+}
+
+/* Треугольник 4 */
+.grass-blade:nth-child(4) {
+    left: 7.1875rem;
+}

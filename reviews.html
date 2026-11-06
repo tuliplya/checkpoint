@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Подробные рецензии дневника Checkpoint: The Last of Us и The Outlast Trials.">
+    <title>Рецензии — Checkpoint</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html" aria-label="Checkpoint — на главную">
+                <span class="logo__flag" aria-hidden="true">
+                    <span class="logo__hill logo__hill--back"></span>
+                    <span class="logo__hill"></span>
+                </span>
+                <span class="logo__text">Checkpoint</span>
+            </a>
+            <nav class="nav" aria-label="Основное меню">
+                <input class="nav__toggle" type="checkbox" id="nav-toggle" aria-label="Меню" aria-controls="nav-list">
+                <label class="nav__burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+                <ul class="nav__list" id="nav-list">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
+                    <li class="nav__item nav__item--drop">
+                        <a class="nav__link is-active" href="reviews.html" aria-current="page">Рецензии</a>
+                        <ul class="nav__sub">
+                            <li><a class="nav__link" href="review-tlou.html">The Last of Us</a></li>
+                            <li><a class="nav__link" href="review-trials.html">The Outlast Trials</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="tasks/index.html">Задания</a></li>
+                    <li class="nav__item"><a class="nav__link" href="coursework.html">Курсовая</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-head page-head--cover">
+            <img class="page-head__img" src="img/reviews-cover.jpg" alt="" width="1920" height="689">
+            <div class="container">
+                <h1>Рецензии</h1>
+                <p>Две игры получили подробные рецензии: франшиза The Last of Us и любимая кооперативная игра The Outlast Trials. У остальных игр короткое впечатление есть прямо на карточке в каталоге.</p>
+            </div>
+        </div>
+
+        <section class="section container">
+            <div class="review-cards">
+                <article class="feature">
+                    <img class="feature__cover" src="img/covers/tlou-part2.jpg" alt="Обложка The Last of Us Part II" width="300" height="420">
+                    <div class="feature__body">
+                        <h2>The Last of Us</h2>
+                        <p><span class="badge badge--fav">любимая франшиза</span></p>
+                        <p>Part I, Left Behind и Part II: об истории, героях и о том, почему вторая часть стала самой любимой игрой.</p>
+                        <a class="btn btn--small" href="review-tlou.html">Читать рецензию</a>
+                    </div>
+                </article>
+                <article class="feature">
+                    <img class="feature__cover" src="img/covers/trials.jpg" alt="Обложка The Outlast Trials" width="300" height="420">
+                    <div class="feature__body">
+                        <h2>The Outlast Trials</h2>
+                        <p><span class="badge badge--fav">любимая кооп-игра</span></p>
+                        <p>Кооперативный хоррор о том, как страшно и весело проходить испытания всей командой.</p>
+                        <a class="btn btn--small" href="review-trials.html">Читать рецензию</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© 2026 Checkpoint — дневник игр</p>
+            <ul class="site-footer__nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="reviews.html">Рецензии</a></li>
+                <li><a href="tasks/index.html">Задания</a></li>
+                <li><a href="coursework.html">Курсовая</a></li>
+                <li><a href="https://github.com/tuliplya">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+    <a class="to-top" href="#top" aria-label="Наверх"></a>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Страница курсовой работы сайта Checkpoint.">
+    <title>Курсовая — Checkpoint</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html" aria-label="Checkpoint — на главную">
+                <span class="logo__flag" aria-hidden="true">
+                    <span class="logo__hill logo__hill--back"></span>
+                    <span class="logo__hill"></span>
+                </span>
+                <span class="logo__text">Checkpoint</span>
+            </a>
+            <nav class="nav" aria-label="Основное меню">
+                <input class="nav__toggle" type="checkbox" id="nav-toggle" aria-label="Меню" aria-controls="nav-list">
+                <label class="nav__burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+                <ul class="nav__list" id="nav-list">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
+                    <li class="nav__item nav__item--drop">
+                        <a class="nav__link" href="reviews.html">Рецензии</a>
+                        <ul class="nav__sub">
+                            <li><a class="nav__link" href="review-tlou.html">The Last of Us</a></li>
+                            <li><a class="nav__link" href="review-trials.html">The Outlast Trials</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="tasks/index.html">Задания</a></li>
+                    <li class="nav__item"><a class="nav__link is-active" href="coursework.html" aria-current="page">Курсовая</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-head page-head--compact">
+            <div class="container">
+                <h1>Курсовая работа</h1>
+            </div>
+        </div>
+
+        <section class="section container">
+            <div class="notice"><strong>Раздел в работе.</strong> Содержимое появится после утверждения требований к курсовой.</div>
+            <div class="links">
+                <a class="link-card" href="tasks/index.html">
+                    <h3>Задания</h3>
+                    <p>Посмотреть выполненные учебные работы.</p>
+                </a>
+                <a class="link-card" href="catalog.html">
+                    <h3>Каталог игр</h3>
+                    <p>Вернуться к дневнику игр.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© 2026 Checkpoint — дневник игр</p>
+            <ul class="site-footer__nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="reviews.html">Рецензии</a></li>
+                <li><a href="tasks/index.html">Задания</a></li>
+                <li><a href="coursework.html">Курсовая</a></li>
+                <li><a href="https://github.com/tuliplya">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+    <a class="to-top" href="#top" aria-label="Наверх"></a>
+</body>
+</html>

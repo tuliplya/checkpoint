@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Каталог игр дневника Checkpoint: франшизы, оценки, статусы и игры в планах.">
+    <title>Каталог — Checkpoint</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container site-header__inner">
+            <a class="logo" href="index.html" aria-label="Checkpoint — на главную">
+                <span class="logo__flag" aria-hidden="true">
+                    <span class="logo__hill logo__hill--back"></span>
+                    <span class="logo__hill"></span>
+                </span>
+                <span class="logo__text">Checkpoint</span>
+            </a>
+            <nav class="nav" aria-label="Основное меню">
+                <input class="nav__toggle" type="checkbox" id="nav-toggle" aria-label="Меню" aria-controls="nav-list">
+                <label class="nav__burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+                <ul class="nav__list" id="nav-list">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link is-active" href="catalog.html" aria-current="page">Каталог</a></li>
+                    <li class="nav__item nav__item--drop">
+                        <a class="nav__link" href="reviews.html">Рецензии</a>
+                        <ul class="nav__sub">
+                            <li><a class="nav__link" href="review-tlou.html">The Last of Us</a></li>
+                            <li><a class="nav__link" href="review-trials.html">The Outlast Trials</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="tasks/index.html">Задания</a></li>
+                    <li class="nav__item"><a class="nav__link" href="coursework.html">Курсовая</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-head page-head--cover">
+            <img class="page-head__img" src="img/catalog-cover.jpg" alt="" width="1920" height="804">
+            <div class="container">
+                <h1>Каталог</h1>
+                <p>Все игры дневника: пройденные, те, что в процессе, и те, до которых я ещё доберусь. Игры собраны по франшизам, оценка франшизы — среднее арифметическое оценок пройденных частей.</p>
+                <div class="catalog-nav">
+                    <a class="btn btn--small" href="#done">Пройдено и в процессе</a>
+                    <a class="btn btn--small btn--ghost" href="#plans">Хочу пройти</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="section container" id="done">
+            <h2 class="section__title">Пройдено и в процессе</h2>
+            <div class="filter" data-filter-bar hidden>
+                <span class="filter__label">Показать:</span>
+                <button class="filter__btn is-active" type="button" data-filter="all" aria-pressed="true">Все</button>
+                <button class="filter__btn" type="button" data-filter="done" aria-pressed="false">Пройдено</button>
+                <button class="filter__btn" type="button" data-filter="progress" aria-pressed="false">В процессе</button>
+            </div>
+            <div class="filter" data-sort-bar hidden>
+                <span class="filter__label">Сортировать:</span>
+                <button class="filter__btn is-active" type="button" data-sort="series" aria-pressed="true">По франшизам</button>
+                <button class="filter__btn" type="button" data-sort="rating" aria-pressed="false">По оценке</button>
+                <button class="filter__btn" type="button" data-sort="title" aria-pressed="false">По названию</button>
+                <button class="filter__btn" type="button" data-sort="year" aria-pressed="false">Сначала новые</button>
+            </div>
+            <section class="franchise franchise--fav" id="tlou">
+                <div class="franchise__head">
+                    <h3>The Last of Us <span class="badge badge--fav">любимая франшиза</span></h3>
+                    <span class="franchise__avg">Средняя оценка: 10 <span class="meter meter--good" style="--score:10" role="img" aria-label="Средняя оценка: 10 из 10"></span></span>
+                </div>
+                <div class="cards">
+                    <article class="game-card" id="game-tlou-part1" data-status="done" data-title="The Last of Us Part I + Left Behind" data-rating="10" data-year="2013">
+                        <img class="game-card__cover" src="img/covers/tlou-part1.jpg" alt="Обложка игры The Last of Us Part I + Left Behind" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">The Last of Us Part I + Left Behind</h4>
+                            <p class="game-card__meta">Приключенческий экшен · Naughty Dog · 2013 (ремейк 2022)</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--good" style="--score:10" role="img" aria-label="Оценка: 10 из 10"></div><span class="game-card__rating">10/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>История Джоэла и Элли в мире, где пандемия разрушила привычную жизнь. В комплекте дополнение Left Behind о Элли и её подруге Райли.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/WxjeV10H1F0" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/2GFFxj8aR2XpwIMYanOPjh" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/1888930/" target="_blank" rel="noopener">Steam</a></p>
+                            <a class="btn btn--small" href="review-tlou.html">Полная рецензия</a>
+                        </div>
+                    </article>
+                    <article class="game-card game-card--fav" id="game-tlou-part2" data-status="done" data-title="The Last of Us Part II" data-rating="10" data-year="2020">
+                        <img class="game-card__cover" src="img/covers/tlou-part2.jpg" alt="Обложка игры The Last of Us Part II" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">The Last of Us Part II</h4>
+                            <p class="game-card__meta">Приключенческий экшен · Naughty Dog · 2020</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                                <span class="badge badge--fav">любимая игра</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--good" style="--score:10" role="img" aria-label="Оценка: 10 из 10"></div><span class="game-card__rating">10/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Продолжение истории Элли: игра о мести и о цене, которую за неё платят.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/vhII1qlcZ4E" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/0tNUmClLcWptIcnoCXpPUC" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/2531310/" target="_blank" rel="noopener">Steam</a></p>
+                            <a class="btn btn--small" href="review-tlou.html#part2">Полная рецензия</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="franchise" id="life-is-strange">
+                <div class="franchise__head">
+                    <h3>Life is Strange</h3>
+                    <span class="franchise__avg">Средняя оценка: 10 <span class="meter meter--good" style="--score:10" role="img" aria-label="Средняя оценка: 10 из 10"></span></span>
+                </div>
+                <div class="cards">
+                    <article class="game-card" id="game-lis" data-status="done" data-title="Life is Strange" data-rating="10" data-year="2015">
+                        <img class="game-card__cover" src="img/covers/lis.jpg" alt="Обложка игры Life is Strange" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Life is Strange</h4>
+                            <p class="game-card__meta">Интерактивная драма · Dontnod · 2015 (ремастер 2022)</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--good" style="--score:10" role="img" aria-label="Оценка: 10 из 10"></div><span class="game-card__rating">10/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Макс Колфилд получает способность перематывать время и вместе с Хлоей расследует тайны городка Аркадия-Бэй.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/mpRhaXfvG_0" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/playlist/0uEOz6n3BoNGa39CQVtsbH" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/1265920/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="franchise" id="telltale">
+                <div class="franchise__head">
+                    <h3>Telltale</h3>
+                    <span class="franchise__avg">Средняя оценка: 9,5 <span class="meter meter--good" style="--score:9.5" role="img" aria-label="Средняя оценка: 9,5 из 10"></span></span>
+                </div>
+                <div class="cards">
+                    <article class="game-card" id="game-twd" data-status="done" data-title="The Walking Dead" data-rating="10" data-year="2012">
+                        <img class="game-card__cover" src="img/covers/twd.jpg" alt="Обложка игры The Walking Dead" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">The Walking Dead</h4>
+                            <p class="game-card__meta">Интерактивное кино · Telltale Games · 2012</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--good" style="--score:10" role="img" aria-label="Оценка: 10 из 10"></div><span class="game-card__rating">10/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Эпизодическая драма: Ли Эверетт и маленькая Клементина выживают среди зомби, а каждый выбор имеет последствия.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/fhL776xz9YU" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/1y7gG7YkBPThMQnchbWQaU" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/1449690/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                    <article class="game-card" id="game-wau" data-status="done" data-title="The Wolf Among Us" data-rating="9" data-year="2013">
+                        <img class="game-card__cover" src="img/covers/wau.jpg" alt="Обложка игры The Wolf Among Us" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">The Wolf Among Us</h4>
+                            <p class="game-card__meta">Интерактивное кино · Telltale Games · 2013</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--good" style="--score:9" role="img" aria-label="Оценка: 9 из 10"></div><span class="game-card__rating">9/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Нуарный детектив по мотивам комиксов Fables: шериф Бигби Волк расследует убийство в Фейблтауне.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/6CEWTE4K1kM" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/playlist/4w9E01uydTIBlqYzaFBXEF" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/3884860/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="franchise" id="outlast">
+                <div class="franchise__head">
+                    <h3>Outlast</h3>
+                    <span class="franchise__avg">Средняя оценка: 9 <span class="meter meter--good" style="--score:9" role="img" aria-label="Средняя оценка: 9 из 10"></span></span>
+                </div>
+                <div class="cards">
+                    <article class="game-card" id="game-outlast" data-status="done" data-title="Outlast + Whistleblower" data-rating="8" data-year="2013">
+                        <img class="game-card__cover" src="img/covers/outlast.jpg" alt="Обложка игры Outlast + Whistleblower" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Outlast + Whistleblower</h4>
+                            <p class="game-card__meta">Хоррор · Red Barrels · 2013 (DLC 2014)</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--good" style="--score:8" role="img" aria-label="Оценка: 8 из 10"></div><span class="game-card__rating">8/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Хоррор без оружия: журналист Майлз Апшер исследует психиатрическую лечебницу Маунт-Мэссив. DLC Whistleblower рассказывает о другом герое — Уэйлоне Парке.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/uKA-IA4locM" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/1cqBmpGNxTHLsT6OE1Z1r1" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/238320/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                    <article class="game-card game-card--fav" id="game-trials" data-status="done" data-title="The Outlast Trials" data-rating="10" data-year="2024">
+                        <img class="game-card__cover" src="img/covers/trials.jpg" alt="Обложка игры The Outlast Trials" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">The Outlast Trials</h4>
+                            <p class="game-card__meta">Кооперативный хоррор · Red Barrels · 2024</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                                <span class="badge badge--fav">любимая кооп-игра</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--good" style="--score:10" role="img" aria-label="Оценка: 10 из 10"></div><span class="game-card__rating">10/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Кооперативный хоррор до четырёх игроков: испытания корпорации Murkoff времён холодной войны.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/hCgiwsIUI4g" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/3iEdB7EQ2N9FqCRvM9p9pP" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/1304930/" target="_blank" rel="noopener">Steam</a></p>
+                            <a class="btn btn--small" href="review-trials.html">Полная рецензия</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="franchise" id="amnesia">
+                <div class="franchise__head">
+                    <h3>Amnesia</h3>
+                    <span class="franchise__avg">Средняя оценка: 7,5 <span class="meter meter--good" style="--score:7.5" role="img" aria-label="Средняя оценка: 7,5 из 10"></span></span>
+                </div>
+                <div class="cards">
+                    <article class="game-card" id="game-amnesia" data-status="done" data-title="Amnesia: The Dark Descent" data-rating="7.5" data-year="2010">
+                        <img class="game-card__cover" src="img/covers/amnesia.jpg" alt="Обложка игры Amnesia: The Dark Descent" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Amnesia: The Dark Descent</h4>
+                            <p class="game-card__meta">Хоррор · Frictional Games · 2010</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--good" style="--score:7.5" role="img" aria-label="Оценка: 7,5 из 10"></div><span class="game-card__rating">7,5/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Хоррор без оружия: Дэниел бродит по замку Бренненбург, прячется от чудовищ и следит за рассудком.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/u1nY_5-UrY4" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/0cQnMgWqL2mpuEiQ4cYJx0" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/57300/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="franchise" id="resident-evil">
+                <div class="franchise__head">
+                    <h3>Resident Evil</h3>
+                    <span class="franchise__avg">Средняя оценка: 7 <span class="meter meter--ok" style="--score:7" role="img" aria-label="Средняя оценка: 7 из 10"></span></span>
+                </div>
+                <div class="cards">
+                    <article class="game-card" id="game-re2" data-status="done" data-title="Resident Evil 2" data-rating="7" data-year="2019">
+                        <img class="game-card__cover" src="img/covers/re2.jpg" alt="Обложка игры Resident Evil 2" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Resident Evil 2</h4>
+                            <p class="game-card__meta">Хоррор на выживание · Capcom · 2019 (ремейк)</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--ok" style="--score:7" role="img" aria-label="Оценка: 7 из 10"></div><span class="game-card__rating">7/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Леон Кеннеди и Клэр Редфилд пытаются выбраться из Раккун-Сити, захваченного зомби.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/u3wS-Q2KBpk" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/29iqxEoRySD2jW0VXNjRzu" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/883710/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="franchise" id="kingdom-come">
+                <div class="franchise__head">
+                    <h3>Kingdom Come: Deliverance</h3>
+                    <span class="franchise__avg">Средняя оценка: —</span>
+                </div>
+                <div class="cards">
+                    <article class="game-card" id="game-kcd1" data-status="progress" data-title="Kingdom Come: Deliverance" data-rating="" data-year="2018">
+                        <img class="game-card__cover" src="img/covers/kcd1.jpg" alt="Обложка игры Kingdom Come: Deliverance" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Kingdom Come: Deliverance</h4>
+                            <p class="game-card__meta">Ролевая игра · Warhorse Studios · 2018</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--progress">В процессе</span>
+                            </p>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Ролевая игра о Богемии 1403 года: сын кузнеца оказывается в центре войны.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/t4SI06Gl9gA" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/0XvTyYwQQhNXYFPbsCzmrg" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/379430/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="franchise" id="red-dead">
+                <div class="franchise__head">
+                    <h3>Red Dead</h3>
+                    <span class="franchise__avg">Средняя оценка: —</span>
+                </div>
+                <div class="cards">
+                    <article class="game-card" id="game-rdr2" data-status="progress" data-title="Red Dead Redemption 2" data-rating="" data-year="2018">
+                        <img class="game-card__cover" src="img/covers/rdr2.jpg" alt="Обложка игры Red Dead Redemption 2" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Red Dead Redemption 2</h4>
+                            <p class="game-card__meta">Вестерн · Rockstar Games · 2018</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--progress">В процессе</span>
+                            </p>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Артур Морган и банда Датча ван дер Линде пытаются выжить на закате Дикого Запада.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/gmA6MrX81z4" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/5Oli3gQJrHdahY7FDEoofW" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/1174180/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="franchise" id="singles">
+                <div class="franchise__head">
+                    <h3>Отдельные игры</h3>
+                </div>
+                <div class="cards">
+                    <article class="game-card" id="game-until-dawn" data-status="done" data-title="Until Dawn" data-rating="9" data-year="2015">
+                        <img class="game-card__cover" src="img/covers/until-dawn.jpg" alt="Обложка игры Until Dawn" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Until Dawn</h4>
+                            <p class="game-card__meta">Интерактивный хоррор · Supermassive Games · 2015</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--good" style="--score:9" role="img" aria-label="Оценка: 9 из 10"></div><span class="game-card__rating">9/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Восемь друзей проводят ночь на горнолыжном курорте, и от ваших решений зависит, кто доживёт до рассвета.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/8nApBGPy0ao" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/playlist/6PwpE2xloxetZAOWKE4hec" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/2172010/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                    <article class="game-card" id="game-hogwarts" data-status="done" data-title="Hogwarts Legacy" data-rating="9" data-year="2023">
+                        <img class="game-card__cover" src="img/covers/hogwarts.jpg" alt="Обложка игры Hogwarts Legacy" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Hogwarts Legacy</h4>
+                            <p class="game-card__meta">Ролевой экшен · Avalanche Software · 2023</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--good" style="--score:9" role="img" aria-label="Оценка: 9 из 10"></div><span class="game-card__rating">9/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Открытый мир Хогвартса конца XIX века: ученик пятого курса изучает магию, исследует замок и раскрывает древнюю тайну.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/BtyBjOW8sGY" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/7zh839yQHDgZJASAuDmnpi" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/990080/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                    <article class="game-card" id="game-portal" data-status="done" data-title="Portal" data-rating="7" data-year="2007">
+                        <img class="game-card__cover" src="img/covers/portal.jpg" alt="Обложка игры Portal" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Portal</h4>
+                            <p class="game-card__meta">Головоломка · Valve · 2007</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--ok" style="--score:7" role="img" aria-label="Оценка: 7 из 10"></div><span class="game-card__rating">7/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Головоломка от первого лица: портальная пушка, лаборатория Aperture Science и ИИ GLaDOS.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/-cO_DIVuSyQ" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/playlist/4cOvyUvRQPgqcQgXmwualv" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/400/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                    <article class="game-card" id="game-stanley" data-status="done" data-title="The Stanley Parable: Ultra Deluxe" data-rating="7" data-year="2022">
+                        <img class="game-card__cover" src="img/covers/stanley.jpg" alt="Обложка игры The Stanley Parable: Ultra Deluxe" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">The Stanley Parable: Ultra Deluxe</h4>
+                            <p class="game-card__meta">Повествовательная игра · Crows Crows Crows · 2022</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--ok" style="--score:7" role="img" aria-label="Оценка: 7 из 10"></div><span class="game-card__rating">7/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Игра с рассказчиком, чьи указания можно выполнять или нарушать — и сюжет каждый раз идёт по-разному.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/Nh6us6dEoWo" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/26yMmck9922U47xc62MbOw" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/1703340/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                    <article class="game-card" id="game-it-takes-two" data-status="done" data-title="It Takes Two" data-rating="6" data-year="2021">
+                        <img class="game-card__cover" src="img/covers/it-takes-two.jpg" alt="Обложка игры It Takes Two" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">It Takes Two</h4>
+                            <p class="game-card__meta">Кооперативное приключение · Hazelight · 2021</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--done">Пройдено</span>
+                            </p>
+                            <div class="game-card__score"><div class="meter meter--ok" style="--score:6" role="img" aria-label="Оценка: 6 из 10"></div><span class="game-card__rating">6/10</span></div>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Кооперативная игра для двоих: супруги, превращённые в кукол, пытаются вернуть себе человеческий облик.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/ohClxMmNLQQ" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/1RVUhqrZ6vEkghRDhe76qV" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/1426210/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                    <article class="game-card" id="game-cult-of-lamb" data-status="progress" data-title="Cult of the Lamb" data-rating="" data-year="2022">
+                        <img class="game-card__cover" src="img/covers/cult-of-lamb.jpg" alt="Обложка игры Cult of the Lamb" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Cult of the Lamb</h4>
+                            <p class="game-card__meta">Рогалик · Massive Monster · 2022</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--progress">В процессе</span>
+                            </p>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Ягнёнок становится главой культа: исследование подземелий и управление своей общиной.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/ctX3jVORkkk" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/6uFdRK2clKYng68ThOFDIE" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/1313140/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                    <article class="game-card" id="game-cyberpunk" data-status="progress" data-title="Cyberpunk 2077" data-rating="" data-year="2020">
+                        <img class="game-card__cover" src="img/covers/cyberpunk.jpg" alt="Обложка игры Cyberpunk 2077" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Cyberpunk 2077</h4>
+                            <p class="game-card__meta">Ролевой боевик · CD Projekt RED · 2020</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--progress">В процессе</span>
+                            </p>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Наёмник V в Ночном городе ищет способ выжить после неудачного заказа.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/8X2kIfS6fb8" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/1B2QrHbMox8vPXUY7rXAFp" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/1091500/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                    <article class="game-card" id="game-dishonored" data-status="progress" data-title="Dishonored" data-rating="" data-year="2012">
+                        <img class="game-card__cover" src="img/covers/dishonored.jpg" alt="Обложка игры Dishonored" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Dishonored</h4>
+                            <p class="game-card__meta">Стелс-экшен · Arkane Studios · 2012</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--progress">В процессе</span>
+                            </p>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Телохранитель императрицы Корво Аттано, обвинённый в её убийстве, ищет виновных и использует сверхъестественные способности.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/VeIn3WjbVbw" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/30LcobDusMVZc6mKgXNEH3" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/217980/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                    <article class="game-card" id="game-bg3" data-status="progress" data-title="Baldur's Gate 3" data-rating="" data-year="2023">
+                        <img class="game-card__cover" src="img/covers/bg3.jpg" alt="Обложка игры Baldur's Gate 3" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Baldur's Gate 3</h4>
+                            <p class="game-card__meta">Ролевая игра · Larian Studios · 2023</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--progress">В процессе</span>
+                            </p>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Партийная RPG по правилам Dungeons and Dragons: компания героев ищет способ избавиться от паразита в голове.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/wWHEw36gTwU" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/6JR4qLOXu96krMWxBTpXSR" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/1086940/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                    <article class="game-card" id="game-stardew" data-status="progress" data-title="Stardew Valley" data-rating="" data-year="2016">
+                        <img class="game-card__cover" src="img/covers/stardew.jpg" alt="Обложка игры Stardew Valley" width="300" height="420" loading="lazy">
+                        <div class="game-card__body">
+                            <h4 class="game-card__title">Stardew Valley</h4>
+                            <p class="game-card__meta">Симулятор фермы · ConcernedApe · 2016</p>
+                            <p class="game-card__status">
+                                <span class="badge badge--progress">В процессе</span>
+                            </p>
+                            <details class="game-card__more">
+                                <summary>Описание</summary>
+                                <p>Хозяйство, шахты и дружба с жителями Пеликан-Тауна.</p>
+                            </details>
+                            <p class="game-card__links"><a class="chip" href="https://youtu.be/ot7uXNQskhs" target="_blank" rel="noopener">Трейлер</a><a class="chip" href="https://open.spotify.com/album/0swXkrnGm7RP1BIHiqV8Jk" target="_blank" rel="noopener">Музыка</a><a class="chip" href="https://store.steampowered.com/app/413150/" target="_blank" rel="noopener">Steam</a></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </section>
+
+        <section class="section container plans" id="plans">
+            <h2 class="section__title">Хочу пройти</h2>
+            <div class="pick">
+                <button class="btn" type="button" data-pick-button hidden>Что пройти дальше?</button>
+                <p class="pick__result" data-pick-result aria-live="polite"></p>
+            </div>
+            <h3>Resident Evil</h3>
+            <ul class="plans__list">
+                <li class="plan-card" data-group="Resident Evil">Resident Evil 4</li>
+                <li class="plan-card" data-group="Resident Evil">Resident Evil 5</li>
+                <li class="plan-card" data-group="Resident Evil">Resident Evil 6</li>
+                <li class="plan-card" data-group="Resident Evil">Resident Evil 7</li>
+                <li class="plan-card" data-group="Resident Evil">Resident Evil 8</li>
+                <li class="plan-card" data-group="Resident Evil">Resident Evil 9</li>
+            </ul>
+            <h3>Amnesia</h3>
+            <ul class="plans__list">
+                <li class="plan-card" data-group="Amnesia">Amnesia: Rebirth</li>
+                <li class="plan-card" data-group="Amnesia">Amnesia: A Machine for Pigs</li>
+                <li class="plan-card" data-group="Amnesia">Amnesia: The Bunker</li>
+            </ul>
+            <h3>Life is Strange</h3>
+            <ul class="plans__list">
+                <li class="plan-card" data-group="Life is Strange">Life is Strange: Before the Storm</li>
+                <li class="plan-card" data-group="Life is Strange">Life is Strange 2</li>
+            </ul>
+            <h3>Kingdom Come: Deliverance</h3>
+            <ul class="plans__list">
+                <li class="plan-card" data-group="Kingdom Come: Deliverance">Kingdom Come: Deliverance II</li>
+            </ul>
+            <h3>Quantic Dream</h3>
+            <ul class="plans__list">
+                <li class="plan-card" data-group="Quantic Dream">Heavy Rain</li>
+                <li class="plan-card" data-group="Quantic Dream">Beyond: Two Souls</li>
+            </ul>
+            <h3>Red Dead</h3>
+            <ul class="plans__list">
+                <li class="plan-card" data-group="Red Dead">Red Dead Redemption</li>
+            </ul>
+            <h3>Отдельные игры</h3>
+            <ul class="plans__list">
+                <li class="plan-card" data-group="">Stray</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p>© 2026 Checkpoint — дневник игр</p>
+            <ul class="site-footer__nav">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="reviews.html">Рецензии</a></li>
+                <li><a href="tasks/index.html">Задания</a></li>
+                <li><a href="coursework.html">Курсовая</a></li>
+                <li><a href="https://github.com/tuliplya">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+    <a class="to-top" href="#top" aria-label="Наверх"></a>
+</body>
+</html>
